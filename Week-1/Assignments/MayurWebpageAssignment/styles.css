@@ -1,0 +1,124 @@
+body {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    font-family: "Lato", sans-serif;
+    font-size: 10px;
+}
+
+main {
+    display: flex;
+    flex: 1 0 auto;
+    background-color: #fff;
+}
+
+main aside {
+    flex: 0 0 2rem;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section.content .music-head {
+    flex: 0 0 280px;
+    display: flex;
+    background-color: #4e4e4e;
+    padding: 4rem;
+}
+
+.music-head .catty-music {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding-left: 5rem;
+    color: #fff;
+}
+
+.music-head .catty-music div:nth-child(1) {
+    margin-bottom: auto;
+}
+
+.music-head .catty-music div:nth-child(1) p:first-child {
+    font-size: 2rem;
+}
+
+section.content .music-list {
+    list-style-type: none;
+    flex: 1 0 auto;
+    padding: 0.5rem 1rem 0;
+}
+
+section.content .music-list li {
+    display: flex;
+    padding: 0 2rem;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.content .music-list li a.catty-cloud {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.3rem;
+    border: 1px solid black;
+}
+
+section.content .music-list li:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+
+/* section.content .music-list li p {
+    flex: 0 0 25%;
+  } */
+
+footer {
+    display: flex;
+    flex: 0 0 90px;
+    background-color: rgba(61, 100, 158, 0.9);
+    color: #fff;
+    padding: 1rem;
+}
+
+footer .catty-music-small {
+    display: flex;
+    margin-right: auto;
+}
+
+footer .catty-music-small img {
+    padding-right: 10px;
+    width: 100px;
+}
+
+footer .catty-music-controls {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
