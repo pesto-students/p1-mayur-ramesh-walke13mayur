@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="bg">
+        <div class="form-container"></div>
+        <p class="form-header">Sign Up</p>
+        <form>
+         <table class="form-table">
+          <!-- <tr>
+              <td colspan="2">
+                  <br />
+                  Title:
+                  <input type="terms" class="Mr" type="radio"/>Mr
+                  <input type="terms" class="Mrs" type="radio"/>Mrs
+                  <input type="terms" class="Miss" type="radio"/>Miss
+                  <br /> <br />
+                  <input type="submit" value="SUBMIT">
+              </td>
+          </tr>       -->
+         <tr>
+             <td> First Name : </td>
+             <td><input type="text" maxlength="8" minlength="4" required></td>
+         </tr>
+         <tr>
+            <td> Last Name : </td>
+            <td><input type="text" maxlength="8" minlength="4" required></td>
+        </tr>
+        <tr>
+            <td> Email : </td>
+            <td><input type="email" required></td>
+        </tr>
+
+         <tr>
+            <td>Password :  </td>
+            <td><input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ></td>
+        </tr>
+        <tr>
+            <td> Confirm Your Password :  </td>
+            <td><input type="text" required></td>
+        </tr>
+        <!-- <tr>
+            <td>Date OF Birth : </td>
+            <td><input type="date"></td>
+        </tr> -->
+
+        <tr>
+            <td>Phone Number : </td>
+            <td><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </td>
+        </tr>
+
+        <tr><td colspan="2"><br/><input type="submit" value="SUBMIT" required></td></tr>
+        
+    </table>
+        </form>
+    </div>
+</body>
+</html>
