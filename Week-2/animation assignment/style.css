@@ -1,0 +1,41 @@
+table {
+    margin: auto;
+    transition: transform 1s;
+    /* -ms-flex-align: center; */
+}
+td {
+    height: 100px;
+    width: 100px;
+}
+#indigo {
+    background-color: indigo;
+    transition: transform 1s;
+}
+#violet {
+    background-color: violet;
+    transition: transform 1s;
+}
+#orange {
+    background-color:orange;
+    transition: transform 1s;
+}
+#blue {
+    background-color: blue;
+    transition: transform 1s;
+}
+table:hover #indigo {
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+table:hover #violet {
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+}
+table:hover #orange {
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+table:hover #blue {
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
